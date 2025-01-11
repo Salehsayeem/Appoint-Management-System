@@ -1,4 +1,4 @@
-@Ams.Api_HostAddress = http://localhost:5115
+@Ams.Api_HostAddress = http://localhost:5073
 
 GET {{Ams.Api_HostAddress}}/weatherforecast/
 Accept: application/json
