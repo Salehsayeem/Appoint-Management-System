@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Ams.Api.Controllers
 {
-    // [Authorize]
+    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class AppointmentController : ControllerBase

@@ -9,25 +9,6 @@ namespace Ams.Api.Helper
 {
     public static class CommonHelper
     {
-        public static Ulid StringToUlidConverter(string userId)
-        {
-            try
-            {
-                if (Ulid.TryParse(userId, out Ulid user))
-                {
-                    return user;
-                }
-                else
-                {
-                    throw new Exception("Invalid User ID format.");
-                }
-            }
-            catch (Exception e)
-            {
-                throw new Exception(e.Message);
-            }
-
-        }
         public class UlidToStringConverter : ValueConverter<Ulid, string>
         {
             public UlidToStringConverter() : base(
